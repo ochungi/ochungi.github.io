@@ -1,0 +1,898 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+img {
+    border: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+em {
+    font-style: normal;
+}
+
+h2 {
+    text-indent: -9999%;
+}
+
+h3 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    text-indent: -9999%;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.font {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+
+.font_1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: -1px;
+    color: #707070;
+}
+
+
+/*div#wrap*/
+
+#wrap {
+    width: 100%;
+}
+
+
+/*header*/
+
+header {
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#language {
+    width: 100px;
+    border: none;
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #707070;
+}
+
+.top_logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50px;
+}
+
+
+/*seach*/
+
+.senlo {
+    position: absolute;
+    right: 10px;
+    top: 90px;
+}
+
+.senlo_list > li {
+    float: left;
+    margin: 0 4px;
+    font-size: 13px;
+    font-family: 'Noto Sans KR';
+    color: #707070;
+}
+
+.senlo_list img {
+    width: 80%;
+    padding-top: 3px;
+}
+
+.seach {
+    position: absolute;
+    right: 120px;
+    display: none;
+}
+
+
+/*gnb*/
+
+nav {
+    width: 100%;
+    height: 53px;
+    background: #222;
+    position: relative;
+}
+
+.gnb_wrap {
+    width: 1200px;
+    height: 53px;
+    margin: 0 auto;
+    line-height: 53px;
+}
+
+ul.gnb {
+    width: 100%;
+    height: 53px;
+}
+
+ul.gnb > li {
+    width: 200px;
+    height: 53px;
+    float: left;
+    position: relative;
+}
+
+ul.gnb > li > a {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+
+ul.gnb > li > .gnb00_a:hover,
+ul.gnb > li > .gnb00_a.off {
+    color: #c1a774;
+}
+
+ul.gnb > li > ul {
+    position: absolute;
+    width: 1000px;
+    height: 53px;
+    top: 48px;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    color: #6a5f59;
+    display: none;
+    z-index: 5;
+}
+
+ul.gnb > li:nth-child(1) .gnb01 {
+    left: 40px;
+    width: 500px;
+}
+
+ul.gnb > li:nth-child(2) .gnb01 {
+    left: 58px;
+    width: 980px;
+}
+
+ul.gnb > li:nth-child(3) .gnb01 {
+    left: 42.5px;
+    width: 550px;
+}
+
+ul.gnb > li:nth-child(4) .gnb01 {
+    left: 36px;
+    width: 300px;
+}
+
+ul.gnb > li:nth-child(5) .gnb01 {
+    left: 43px;
+    width: 300px;
+}
+
+ul.gnb > li:nth-child(6) .gnb01 {
+    left: -45px;
+    width: 300px;
+}
+
+ul.gnb > li > ul > li {
+    float: left;
+    margin: 0 10px;
+    letter-spacing: -1px;
+}
+
+
+ul.gnb > li > ul.on {
+    display: block;
+}
+
+.gnb01_bg {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    background: #d7d3d1;
+    top: 53px;
+    display: none;
+    z-index: 3;
+}
+
+.gnb01_bg.on {
+    display: block;
+}
+
+
+/*main*/
+
+main {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+main > .top_view {
+    width: 100%;
+    height: 520px;
+    background: url('../img/t_img.png')no-repeat;
+    position: relative;
+    margin-bottom: 90px;
+    position: absolute;
+}
+
+main > .top_view >img {
+    width: 220px;
+    height: auto;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-left: -110px;
+}
+
+main > .top_view > div {
+    position: relative;
+    top: -25px;
+    left: 0;
+}
+
+main > .top_view > div >img {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    margin-left: -45px;
+}
+
+main > .top_view > div >h1 {
+    width: 180px;
+    height: auto;
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    margin-left: -90px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.top_view > div > h1 > img {
+    width: 450px;
+    margin-left: -140px;
+    padding: 35px 0;
+    box-sizing: border-box
+}
+
+
+/*main > section.f_infor_gome 시작*/
+
+main > section.f_infor_gome {
+    width: 1200px;
+    position: absolute;
+    top: 608px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+
+/*section.f_infor_gome > article.food_t_box 시작*/
+
+section.f_infor_gome > article.food_t_box {
+    width: 100%;
+}
+
+article.food_t_box > h2 {
+    width: 354px;
+    height: 38px;
+    background: url('../img/m_text.png')no-repeat center center;
+    margin: 0 auto;
+}
+
+article.food_t_box > .gold_line {
+    width: 60px;
+    height: 1px;
+    margin: 12px auto 12px;
+    background-color: #c1a774;
+}
+
+article.food_t_box > .c_text_p {
+    margin-top: 9px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #707070;
+}
+
+ul.gold_line_txt {
+    width: 165px;
+    margin: 89px auto 0;
+    overflow: hidden
+}
+
+ul.gold_line_txt > li {
+    float: left;
+    letter-spacing: 0.03em;
+}
+
+ul.gold_line_txt > li:nth-child(1),
+ul.gold_line_txt > li:nth-child(3) {
+    width: 24px;
+    height: 1px;
+    background-color: #c1a774;
+    margin-top: 13px;
+}
+
+ul.gold_line_txt > li:nth-child(2) {
+    padding: 0 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+ul.gold_line_txt > li:nth-child(2) > em {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*div.container*/
+
+.container {
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.container > .s_group_gome {
+    width: 290px;
+    height: 300px;
+    margin-right: 10px;
+    float: left
+}
+
+.container > .s_group_gome > .store_gome {
+    width: 290px;
+    height: 50px;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+}
+
+.store_gome > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.85em;
+    float: left;
+    line-height: 50px;
+}
+
+.store_gome > p:nth-child(1) {
+    width: 90px;
+    margin: 0 3px 0 15px;
+    letter-spacing: -1px;
+}
+
+.store_gome > p:nth-child(2) {
+    width: 167px;
+    text-align: left;
+    letter-spacing: -0.5px;
+}
+
+.store_gome > p:nth-child(2) > em {
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid #c1a774;
+    text-align: right;
+}
+
+
+/*article.f_group*/
+
+article.f_group {
+    width: 1000px;
+    height: 375px;
+    margin: 0 auto;
+}
+
+article.f_group > div {
+    width: 490px;
+    height: 380px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.map_box {
+    background: url('../img/map_g_pic.png')no-repeat -70px -120px;
+    background-size: 135%;
+}
+
+.f_img_group > div {
+    width: 240px;
+    height: 185px;
+    float: left;
+}
+
+.f_img_group > div:nth-child(1) {
+    background: url('../img/m_pic1.png');
+    background-size: cover;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+.f_img_group > div:nth-child(2) {
+    background: url('../img/m_pic2.png');
+    background-size: cover;
+}
+
+.f_img_group > div:nth-child(3) {
+    background: url('../img/m_pic3.png');
+    background-size: cover;
+    margin-right: 8px;
+}
+
+.f_img_group > div:nth-child(4) {
+    background: url('../img/m_pic4.png');
+    background-size: cover;
+}
+
+
+/*article.f_group_on-매장 클릭 후의 반응*/
+
+article.f_group_on {
+    width: 1000px;
+    height: 375px;
+    margin: 0 auto;
+    display: none;
+}
+
+article.f_group_on > div {
+    width: 490px;
+    height: 380px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.map_box_on {
+    background: url('../img/map_g_pic2.png')right bottom;
+    background-size: 150%;
+}
+
+.map_box_on > .m_nav {
+    width: 30px;
+    height: 70px;
+    border: 1px solid #666;
+    background: #fff;
+    border-radius: 5px;
+    margin: 10px 0 0 10px;
+}
+
+.m_nav > div {
+    border: 1px solid #666;
+}
+
+.m_nav > a {
+    display: block;
+    width: 30px;
+    height: 35px;
+}
+
+.m_nav > a >i {
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+.f_img_group_on {
+    background: url('../img/f_pic1.png') -80px center;
+}
+
+.f_img_group_on > img {
+    display: inline-block;
+    margin: 100px 160px;
+}
+
+
+/*                         ============*/
+
+
+/*main > section.f_infor_eatopia 시작*/
+
+main > section.f_infor_eatopia {
+    width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 1730px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+
+/*section.f_infor_gome > article.food_t_box 시작*/
+
+section.f_infor_eatopia > article.food_t_box_eatopia {
+    width: 100%;
+}
+
+article.food_t_box_eatopia > h2 {
+    width: 354px;
+    height: 38px;
+    background: url('../img/m_text.png')no-repeat center center;
+    margin: 0 auto;
+}
+
+article.food_t_box_eatopia > .gold_line {
+    width: 60px;
+    height: 1px;
+    margin: 12px auto 12px;
+    background-color: #c1a774;
+}
+
+article.food_t_box_eatopia > .c_text_p {
+    margin-top: 9px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #707070;
+}
+
+ul.gold_line_txt {
+    width: 165px;
+    margin: 89px auto 0;
+    overflow: hidden
+}
+
+.food_t_box_eatopia > ul.gold_line_txt > li {
+    float: left;
+    letter-spacing: 0.03em;
+}
+
+.food_t_box_eatopia > ul.gold_line_txt > li:nth-child(1),
+.food_t_box_eatopia > ul.gold_line_txt > li:nth-child(3) {
+    width: 24px;
+    height: 1px;
+    background-color: #c1a774;
+    margin-top: 13px;
+}
+
+.food_t_box_eatopia > ul.gold_line_txt > li:nth-child(2) {
+    padding: 0 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.food_t_box_eatopia > ul.gold_line_txt > li:nth-child(2) > em {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*div.container*/
+
+.container_eatopia {
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.s_group_eatopia {
+    width: 290px;
+    height: 300px;
+    margin-right: 10px;
+    float: left
+}
+
+.store_eatopia {
+    width: 290px;
+    height: 50px;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+}
+
+.store_eatopia > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.85em;
+    float: left;
+    line-height: 50px;
+}
+
+.store_eatopia > p:nth-child(1) {
+    width: 90px;
+    margin: 0 3px 0 15px;
+    letter-spacing: -1px;
+}
+
+.store_eatopia > p:nth-child(2) {
+    width: 167px;
+    text-align: left;
+    letter-spacing: -0.5px;
+}
+
+.store_eatopia > p:nth-child(2) > em {
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid #c1a774;
+    text-align: right;
+}
+
+
+/*article.f_group*/
+
+article.f_group_eatopia {
+    width: 1000px;
+    height: 375px;
+    margin: 0 auto;
+}
+
+article.f_group_eatopia > div {
+    width: 490px;
+    height: 380px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.map_box_eatopia {
+    background: url('../img/map_e_pic.png')no-repeat right -60px;
+    background-size: 120%;
+}
+
+.f_img_group_eatopia > div {
+    width: 240px;
+    height: 185px;
+    float: left;
+}
+
+.f_img_group_eatopia > div:nth-child(1) {
+    background: url('../img/E_pic1.png');
+    background-size: cover;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+.f_img_group_eatopia > div:nth-child(2) {
+    background: url('../img/E_pic2.png');
+    background-size: cover
+}
+
+.f_img_group_eatopia > div:nth-child(3) {
+    background: url('../img/E_pic3.png');
+    background-size: cover;
+    margin-right: 8px;
+}
+
+.f_img_group_eatopia > div:nth-child(4) {
+    background: url('../img/E_pic4.png');
+    background-size: cover
+}
+
+
+/*article.f_group_on-매장 클릭 후의 반응*/
+
+article.f_group_on_eatopia {
+    width: 1000px;
+    height: 375px;
+    margin: 0 auto;
+    display: none;
+}
+
+article.f_group_on_eatopia > div {
+    width: 490px;
+    height: 380px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.map_box_on_eatopia {
+    background: url('../img/map_e_pic2.png')left bottom;
+    background-size: 120%;
+}
+
+.map_box_on_eatopia > .m_nav_eatopia {
+    width: 30px;
+    height: 70px;
+    border: 1px solid #666;
+    background: #fff;
+    border-radius: 5px;
+    margin: 10px 0 0 10px;
+}
+
+.m_nav_eatopia > div {
+    border: 1px solid #666
+}
+
+.m_nav_eatopia > a {
+    display: block;
+    width: 30px;
+    height: 35px;
+}
+
+.m_nav_eatopia > a >i {
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+.f_img_group_on_eatopia {
+    background: url('../img/f_pic2.png') center center;
+    background-size: 180%;
+}
+
+.f_img_group_on_eatopia > img {
+    width: 350px;
+    height: auto;
+    display: inline-block;
+    margin: 80px 68px;
+}
+
+.patten {
+    width: 100%;
+    height: 259px;
+    background: url('../img/patten.png');
+    position: absolute;
+    z-index: -5;
+    top: 1400px;
+}
+
+
+/*footer start*/
+
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 225px;
+    background: #464646;
+    color: #fefcfc;
+    font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    top: 3000px;
+}
+
+.fo_contents > div ul li span {
+    font-size: 15px;
+    margin-bottom: 7px;
+    color: #fff;
+}
+
+.fo_contents > div ul li {
+    display: block;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.fo_contents > div ul li a {
+    display: block;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.fo_contents {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 45px;
+    box-sizing: border-box;
+}
+
+.fo_co_01 {
+    float: left;
+    margin-left: 75px;
+    margin-right: 143px
+}
+
+.fo_co_02 {
+    float: left;
+    margin-right: 144px
+}
+
+.fo_co_03 {
+    float: left;
+    margin-right: 143px
+}
+
+.fo_co_04 {
+    float: left;
+    margin-right: 142px
+}
+
+.fo_co_05 {
+    float: left;
+}
+
+.fo_co_05 > img {
+    padding-right: 5px;
+}
+
+.fo_co_sp_gab {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+address {
+    width: 100%;
+    height: 63px;
+    background: #000;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.addres {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.addre_ul {
+    display: block;
+    width: 1100px;
+    margin: 0 auto;
+    color: #fefcfc;
+    font-style: normal;
+    box-sizing: border-box;
+    height: 63px;
+    line-height: 63px;
+}
+
+.addre_ul > li {
+    float: left;
+    margin-right: 10px;
+}
+
+.addre_ul >.addre_ul_red {
+    color: #bd132e;
+}
+
+.familysite_li {
+    width: 150px;
+}
+
+.familysite {
+    background: #000;
+    border: none;
+    color: #fefcfc;
+    height: 16px;
+    font-size: 12px;
+    width: 130px;
+}

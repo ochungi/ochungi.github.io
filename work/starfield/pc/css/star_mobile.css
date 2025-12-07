@@ -1,0 +1,280 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{margin:0 ; padding: 0;}
+input{margin:0; padding:0; box-sizing: border-box}
+a{text-decoration: none; 
+    color:#000;}
+img{border:0;
+    padding:0; margin:0;}
+ul li{list-style: none;}
+h2{text-decoration: none;}
+p{padding:0; margin:0;}
+
+
+body{
+    background: #ddd
+}
+.wrap{
+    width:640px;height: 1130px;
+    margin:20px auto 0;
+   /* border:1px solid red;*/
+    background: #fff;
+    position: relative;
+}
+header{
+    width:100%;
+    height: 92px;
+    /*border:1px solid black;
+    box-sizing: border-box;*/
+}
+#gnb_menubtn{
+    position: absolute;
+    left: 20px;
+    top:30px;
+    cursor: pointer;
+}
+#top_logo{
+    position: absolute;
+    left:320px;top:10px;
+    margin-left: -72px;
+    cursor: pointer;
+}
+#seachbtn{
+    position: absolute;
+    right:20px;
+    top:26px;
+    cursor: pointer;
+}
+.click_blind{
+    width:640px; height: 1130px;
+    position: absolute;
+    top:0;
+    background: rgba(47, 46, 46,0.8);
+    display: none;   
+}
+.gnb_wrap{
+    position: absolute;
+    z-index: 10;
+    top:0px;left: -640px;
+    width:566px;
+    background: #fff;
+    display: none;
+}
+.gnb_wrap.on{
+    display: block;
+}
+
+.gnb000{ 
+    width:100%;
+    height: 144px;
+}
+.mobile_gnblogo{
+    position: absolute;
+    left: 283px;
+    top:72px;
+    margin-top:-45px;
+    margin-left: -100px;
+    height: 90px;
+}
+.x{
+    position: absolute;
+    top:72px;
+    margin-top: -13px;
+    left: 520px;
+    cursor: pointer;
+}
+
+#accordian {
+	background: #fff;
+	width:566px;
+	max-height: 1038px;
+    text-align: center;
+    overflow: auto;
+}
+
+/* 메뉴 스타일 */
+#accordian h3 {
+	font-size: 30px;
+    color: #666;
+	line-height: 34px;
+	padding:30px 0;
+	cursor: pointer;
+    border-top:2px solid #f0f0f0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR';
+}
+#accordian h3.off{
+	font-size: 30px;
+    color: #666;
+	line-height: 34px;
+	padding:30px 0;
+	cursor: pointer;
+    border-top:2px solid #f0f0f0;
+    box-sizing: border-box;
+}
+#accordian h3.on{
+    background:#000;
+    color:#fff;
+}
+
+/* 서브메뉴 스타일 */
+#accordian ul > li > ul > li > a {
+	color: white;
+    display: block;
+	font-size:25px;
+    color: #666;
+    padding:25px 0;
+	display: block;
+    background: #f2f2f2;
+    border:1px solid #fff;
+    box-sizing: border-box;
+	-webkit-transition: all 0.15s;
+	-moz-transition: all 0.15s;
+	-o-transition: all 0.15s;
+	-ms-transition: all 0.15s;
+	transition: all 0.15s;
+    font-family: 'Noto Sans KR';
+}
+#accordian ul ul li a:hover {
+    font-weight: bold;
+    text-shadow: 2px -2px px #ddd
+}
+
+/* active 클래스 외에 것은 보이지 않게 하기 */
+#accordian ul ul {
+	display: none;
+}
+#accordian li.active ul {
+	display: block;
+}
+
+
+.gnb_icon{
+    background: #c1a774;
+    width:100%;
+    height: 120px;
+    color:#fff;
+}
+.icon_box{
+    padding-top: 20px;
+    margin:0 auto;
+    width:495px;
+    height:80px;
+}
+.icon_box > p {
+    font-family: 'Noto Sans KR';
+    font-size:18px;
+    text-align: center;
+    float:left;
+    width:90px ; height: 80px;
+    /*border:1px solid red;*/
+    cursor: pointer;
+}
+.icon_box_p{
+    margin-right:45px;
+}
+.icon_box > p > a{
+    display: block;
+    color:#fff
+}
+.icon_box > p > a > em{
+    display: inline-block;
+    padding:0;
+    width:53px; height: 53px;
+}
+.icon_box > p:nth-child(1) a em{
+     background: url(../img/gnb_icon01.png) no-repeat center center;
+    background-size:contain
+}
+.icon_box > p:nth-child(2) a em{
+     background: url(../img/gnb_icon02.png) no-repeat center center;
+    background-size:130%;
+}
+.icon_box > p:nth-child(3) a em{
+     background: url(../img/gnb_icon03.png) no-repeat top center;
+    background-size:contain;
+}
+.icon_box > p:nth-child(4) a em{
+     background: url(../img/gnb_icon04.png) no-repeat top center;
+    background-size:contain
+}
+
+/*header & gnb 끝*/
+/*footer 시작*/
+
+footer{
+    width:100%;
+    height: 105px;
+    background: #f5f5f5;
+}
+.fooer_icon{
+    width:613px;height: 80px;
+    margin:0 auto;
+    padding-top:12px;
+    cursor: pointer;
+}
+.fo_ic_p{ 
+    color:#b1a9a3;
+    font-family: 'Noto Sans KR';
+    font-size:18px;
+    text-align: center;
+    float:left;
+    width:105px ; height: 80px;
+    /*border:1px solid red;*/
+    font-weight:500;
+}
+.fo_ic_p:nth-child(3) a{color:#c51c37}
+.fooer_icon > p > a{
+    
+    display: block;
+    color: #b1a9a3;
+    font-weight: bold
+}
+.fooer_icon > p > a >em{
+    display: inline-block;
+    padding:0;
+    width:53px; height: 53px;
+    /*border:1px solid red;*/
+}
+.fooer_icon > p:nth-child(1) em{
+    background: url(../img/footer_icon01.png) no-repeat center center;
+    /*background-size:contain;*/
+}
+.fooer_icon > p:nth-child(2) em{
+    background: url(../img/footer_icon02.png) no-repeat center center;
+    /*background-size:contain;*/
+}
+.fooer_icon > p:nth-child(3) em{
+    background: url(../img/footer_icon03.png) no-repeat center center;
+    /*background-size:contain;*/
+}
+.fooer_icon > p:nth-child(4) em{
+    background: url(../img/footer_icon04.png) no-repeat center center;
+    /*background-size:contain;*/
+}
+.fooer_icon > p:nth-child(5) em{
+    background: url(../img/footer_icon05.png) no-repeat center center;
+    /*background-size:contain;*/
+}
+.fooer_icon_p{
+    margin-right: 22px;
+}
+/*footer 끝*/
+
+/*내용에 대해서 쓰시면 댐*/
+.content{
+    font-family: 'Noto Sans KR';
+    width:640px;
+    height: 933px;
+    color:#eee;
+    font-size:30px;        
+}
+
+
+
+
+
+
+
+

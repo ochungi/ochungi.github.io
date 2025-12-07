@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>주요매장</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/starfield02.css">
+
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jssor.slider-21.1.6.mini.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/starfield05.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('sub_gnb').click(function (e) {
+                $.scrollTo(this.hash || 0, 1500);
+                e.preventDefault();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            //Slide Gallery 이미지 샐랙터
+            jQuery(".list_wrap ul li").click(function () {
+                jQuery(this).addClass("active").siblings().removeClass();
+                jQuery(".photo_img img").attr("src", jQuery(this).children("a").attr("href"));
+                return false;
+            });
+
+            //Slide Gallery 슬라이딩 초기화
+            jQuery(".list_wrap").width("1120" * parseInt(jQuery(".list_wrap ul").size()) + "px");
+            jQuery(".list_wrap ul:last").prependTo(".list_wrap");
+            jQuery(".list_wrap").css("margin-left", "-1120px");
+
+            //Silde Gallery의 prev버튼
+            jQuery("button.btn_prev").click(function () {
+                jQuery(".list_wrap").animate({
+                    marginLeft: "+=1120px"
+                }, "swing", function () {
+                    jQuery(".list_wrap ul:last").prependTo(".list_wrap");
+                    jQuery(".list_wrap").css("margin-left", "-1120px");
+                    jQuery(".list_wrap ul li").removeClass();
+                });
+            });
+
+            //Silde Gallery의 next버튼
+            jQuery("button.btn_next").click(function () {
+                jQuery(".list_wrap").animate({
+                    marginLeft: "-=1120px"
+                }, "swing", function () {
+                    jQuery(".list_wrap ul:first").appendTo(".list_wrap");
+                    jQuery(".list_wrap").css("margin-left", "-1120px");
+                    jQuery(".list_wrap ul li").removeClass();
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <select id="language">
+                <option>KOREAN</option>
+                <option>ENGLISH</option>
+                <option>JAPANESE</option>
+                <option>CHINESE</option>
+            </select>
+            <a href="index.html"><img src="img/new_pc_logo.png" alt="" class="top_logo"></a>
+
+            <div class="senlo">
+                <ul class="senlo_list">
+                    <li>
+                        <input type="text" class="seach">
+                    </li>
+                    <li><img src="img/icon_search_web.png" alt="" class="seach_button"></li>
+                    <li>|</li>
+                    <li>로그인</li>
+                </ul>
+            </div>
+        </header>
+        <nav>
+            <div class="gnb_wrap">
+                <ul class="gnb">
+                    <li><a href="starfield01.html" class="gnb00_a">스타필드 소개</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield01.html">소개</a></li>
+                            <li>|</li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield02.html" class="gnb00_a">주요매장</a>
+                        <ul class="gnb01">
+                            <li><a href="#">신세계백화점</a></li>
+                            <li>|</li>
+                            <li><a href="#">이마트 트레이더스</a></li>
+                            <li>|</li>
+                            <li><a href="#">메종시티아</a></li>
+                            <li>|</li>
+                            <li><a href="#">PK마켓</a></li>
+                            <li>|</li>
+                            <li><a href="#">일렉트로마트</a></li>
+                            <li>|</li>
+                            <li><a href="#">토이킹덤</a></li>
+                            <li>|</li>
+                            <li><a href="#">베이비서클</a></li>
+                            <li>|</li>
+                            <li><a href="#">한샘</a></li>
+                            <li>|</li>
+                            <li><a href="#">BMW MINI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="gnb00_a">엔터테인먼트</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield03_01.html" target="_blank">스포츠 몬스터</a></li>
+                            <li>|</li>
+                            <li><a href="starfield03_02.html">아쿠아 필드</a></li>
+                            <li>|</li>
+                            <li><a href="#">메가박스</a></li>
+                            <li>|</li>
+                            <li><a href="#">플레이타임</a></li>
+                            <li>|</li>
+                            <li><a href="#">영풍문고</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield04.html" class="gnb00_a">레스토랑&amp;카페</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield04.html">고메스트리트</a></li>
+                            <li>|</li>
+                            <li><a href="starfield04.html">잇토피아</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield05.html" class="gnb00_a">이벤트&amp;SNS</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield05.html">이벤트</a></li>
+                            <li>|</li>
+                            <li><a href="starfield05.html">SNS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield06.html" class="gnb00_a">고객의견</a>
+                        <ul class="gnb01">
+                            <li><a href="#">공지사항</a></li>
+                            <li>|</li>
+                            <li><a href="starfield06.html">FAQ</a></li>
+                            <li>|</li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb01_bg"></div>
+        </nav>
+
+        <main>
+            <section>
+                <article class="main_essential">
+                    <p><img src="img/essential.png" alt=""></p>
+                    <p class="gold_line01"></p>
+                    <p>스타필드하남을 대표하는 매장을 소개합니다.</p>
+                </article>
+            </section>
+            <section class="sub_gnb">
+                <ul>
+                    <li><a href="#1">주요매장</a></li>
+                    <li><a href="#2">갤러리</a></li>
+                </ul>
+            </section>
+
+            <div class="box">
+                <section class="box01">
+                    <article class="box_txt">
+                        <h2 id="1">ESSENTIAL</h2>
+                        <div class="gold_line02"></div>
+                        <p>주요매장</p>
+                    </article>
+                    <article class="boxs01">
+                        <div class="photo_gallery">
+                            <p class="photo_img">
+                                <img src="img/01.jpg" alt="스크린샷" />
+                            </p>
+                            <button class="btn_prev">prev</button>
+                            <button class="btn_next">next</button>
+                            <div class="photo_list">
+                                <div class="list_wrap">
+                                    <ul>
+                                        <li>
+                                            <div class="p_wrap">
+                                                <p class="info_p01">SHINSEGAE</p>
+                                                <div class="info_line"></div>
+                                                <p class="info_p02">premium shopping</p>
+                                            </div>
+                                            <a href="img/01.jpg"><img src="img/11.jpg" alt="스크린샷" /></a>
+                                            <div></div>
+                                        </li>
+                                        <li>
+                                            <div class="p_wrap">
+                                                <p class="info_p01">E MART TRADERS</p>
+                                                <div class="info_line"></div>
+                                                <p class="info_p02">with my family</p>
+                                            </div>
+                                            <a href="img/02.jpg"><img src="img/12.jpg" alt="스크린샷" /></a>
+                                        </li>
+                                        <li>
+                                            <div class="p_wrap">
+                                                <p class="info_p01">MAISONTICIA</p>
+                                                <div class="info_line"></div>
+                                                <p class="info_p02">emotional style</p>
+                                            </div>
+                                            <a href="img/03.jpg"><img src="img/13.jpg" alt="스크린샷" /></a>
+                                        </li>
+                                        <li>
+                                            <div class="p_wrap">
+                                                <p class="info_p01">PK MARKET</p>
+                                                <div class="info_line"></div>
+                                                <p class="info_p02">various services</p>
+                                            </div>
+                                            <a href="img/04.jpg"><img src="img/14.jpg" alt="스크린샷" /></a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <div class="p_wrap">
+                                                <p class="info_p01">ELECTRO MART</p>
+                                                <div class="info_line"></div>
+                                                <p class="info_p02">Everything is Possible</p>
+                                            </div>
+                                            <a href="img/05.jpg"><img src="img/15.jpg" alt="스크린샷" /></a>
+                                        </li>
+                                        <li>
+                                            <div class="p_wrap">
+                                                <p class="info_p01">TOY KINGDOM</p>
+                                                <div class="info_line"></div>
+                                                <p class="info_p02">exciting experience</p>
+                                            </div>
+                                            <a href="img/06.jpg"><img src="img/16.jpg" alt="스크린샷" /></a>
+                                        </li>
+                                        <li>
+                                            <div class="p_wrap">
+                                                <p class="info_p01">BABY CIRCLE</p>
+                                                <div class="info_line"></div>
+                                                <p class="info_p02">infant care everything</p>
+                                            </div>
+                                            <a href="img/07.jpg"><img src="img/17.jpg" alt="스크린샷" /></a>
+                                        </li>
+                                        <li>
+                                            <div class="p_wrap">
+                                                <p class="info_p01">HANSSEM</p>
+                                                <div class="info_line"></div>
+                                                <p class="info_p02">modern interior</p>
+                                            </div>
+                                            <a href="img/08.jpg"><img src="img/18.jpg" alt="스크린샷" /></a>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="box02">
+                    <article class="box_txt">
+                        <h2 id="2">GALLERY</h2>
+                        <div class="gold_line02"></div>
+                        <p>갤러리</p>
+                    </article>
+                    <article class="boxs02">
+                        <div class="wrap-img">
+                            <p>PK 마켓</p>
+                            <img src="img/pic1.jpg" alt=""></div>
+                        <div>
+                            <p>메종 티시아</p>
+                            <img src="img/pic2.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>일렉트로마트</p><img src="img/pic3.jpg" alt=""></div>
+                        <div>
+                            <p>토이킹덤</p><img src="img/pic4.jpg" alt=""></div>
+                        <div>
+                            <p>BMW MINI</p><img src="img/pic5.jpg" alt=""></div>
+                        <div>
+                            <p>한샘</p><img src="img/pic6.jpg" alt=""></div>
+                    </article>
+                </section>
+            </div>
+            <section>
+                <article class="pattern">
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div class="fo_contents">
+                <div class="fo_co_01">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">스타필드하남</span></li>
+                        <li class="fo_co_p">경기도 하남시 미사대로 750</li>
+                        <li>starfield@starfield.co.kr</li>
+                        <li>1833 - 9001</li>
+                    </ul>
+                </div>
+                <div class="fo_co_02">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">회사소개</span></li>
+                        <li class="fo_co_p"><a href="#">신세계 프라퍼티</a></li>
+                        <li><a href="#">터브먼 아시아</a></li>
+                    </ul>
+                </div>
+                <div class="fo_co_03">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">협력사 상담</span></li>
+                        <li class="fo_co_p"><a href="#">상담신청 및 입점 안내</a></li>
+                    </ul>
+                </div>
+                <div class="fo_co_04">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">언어</span></li>
+                        <li class="fo_co_p"><a href="#">한국어</a></li>
+                        <li><a href="#">영어</a></li>
+                        <li><a href="#">일본어</a></li>
+                        <li><a href="#">중국어</a></li>
+                    </ul>
+                </div>
+                <div class="fo_co_05">
+                    <img src="img/sns_icon_01.png" alt="sns01">
+                    <img src="img/sns_icon_02.png" alt="sns02">
+                    <img src="img/sns_icon_03.png" alt="sns03">
+                </div>
+            </div>
+            <address>
+    	<div class="addres">
+    	<ul class="addre_ul">
+    		<li>Copyright ⓒ 1996-2016  HANAM UNION SQUARE CO .LTD All Rights Reserved.</li>
+    		<li>|</li>
+    		<li>이용약관</li>
+    		<li>|</li>
+    		<li class="addre_ul_red">개인정보취급(처리)방침</li>
+    		<li>|</li>
+    		<li>위치기반서비스이용약관</li>
+    		<li>|</li>
+    		<li>개인정보관리책임자 : 강필서</li>
+    		<li>|</li>
+    		<li class="familysite_li">
+    			<select class="familysite">
+					<option value="http://www.naver.com">패밀리사이트</option>
+					<option value="http://www.naver.com">신세계블로그</option>
+					<option value="http://www.naver.com">신세계백화점</option>
+					<option value="http://www.naver.com">>이마트</option>
+			    	<option value="http://www.naver.com">SSG.COM</option>
+					<option value="http://www.naver.com">이마트 에브리데이></option>
+					<option value="http://www.naver.com">신세계 포인트</option>
+					<option value="http://www.naver.com">신세계 면세점</option>
+					<option value="http://www.naver.com">신세계 I&amp;C</option>
+					<option value="http://www.naver.com">신세계건설</option>
+					<option value="http://www.naver.com">신세계푸드</option>
+					<option value="http://www.naver.com">신세계인터내셔날</option>
+					<option value="http://www.naver.com">프리미엄 아울렛</option>
+					<option value="http://www.naver.com">스타벅스 커피 코리아</option>
+					<option value="http://www.naver.com">웨스틴 조선호텔</option>
+				</select>
+    		</li>
+    	</ul>
+    	</div>
+    </address>
+        </footer>
+    </div>
+</body>
+
+</html>

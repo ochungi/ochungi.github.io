@@ -1,0 +1,677 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*font-family: 'Noto Sans KR', sans-serif; -> 한글
+font-family: 'Nanum Gothic', sans-serif;-> 금색영문에*/
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*wrap감싸기*/
+
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*header*/
+
+header {
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#language {
+    width: 100px;
+    border: none;
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #707070;
+}
+
+.top_logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50px;
+}
+
+
+/*seach*/
+
+.senlo {
+    position: absolute;
+    right: 10px;
+    top: 90px;
+}
+
+.senlo_list > li {
+    float: left;
+    margin: 0 4px;
+    font-size: 13px;
+    font-family: 'Noto Sans KR';
+    color: #707070;
+}
+
+.senlo_list img {
+    width: 80%;
+    padding-top: 3px;
+}
+
+.seach {
+    position: absolute;
+    right: 120px;
+    display: none;
+}
+
+
+/*gnb*/
+
+nav {
+    width: 100%;
+    height: 53px;
+    background: #222;
+    position: relative;
+}
+
+.gnb_wrap {
+    width: 1200px;
+    height: 53px;
+    margin: 0 auto;
+	background: red;
+    line-height: 53px;
+}
+
+ul.gnb {
+    width: 100%;
+    height: 53px;
+}
+
+ul.gnb > li {
+    width: 200px;
+    height: 53px;
+    float: left;
+    position: relative;
+}
+
+ul.gnb > li > a {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+
+ul.gnb > li > .gnb00_a:hover,
+ul.gnb > li > .gnb00_a.off {
+    color: #c1a774;
+}
+
+ul.gnb > li > ul {
+    position: absolute;
+    width: 1000px;
+    height: 53px;
+    top: 48px;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    color: #6a5f59;
+    display: none;
+    z-index: 5;
+}
+
+ul.gnb > li:nth-child(1) .gnb01 {
+    left: 40px;
+    width: 500px;
+}
+
+ul.gnb > li:nth-child(2) .gnb01 {
+    left: 58px;
+    width: 980px;
+}
+
+ul.gnb > li:nth-child(3) .gnb01 {
+    left: 42.5px;
+    width: 550px;
+}
+
+ul.gnb > li:nth-child(4) .gnb01 {
+    left: 36px;
+    width: 300px;
+}
+
+ul.gnb > li:nth-child(5) .gnb01 {
+    left: 43px;
+    width: 300px;
+}
+
+ul.gnb > li:nth-child(6) .gnb01 {
+    left: -45px;
+    width: 300px;
+}
+
+ul.gnb > li > ul > li {
+    float: left;
+    margin: 0 10px;
+    letter-spacing: -1px;
+}
+
+
+ul.gnb > li > ul.on {
+    display: block;
+}
+
+.gnb01_bg {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    background: #d7d3d1;
+    top: 53px;
+    display: none;
+    z-index: 3;
+}
+
+.gnb01_bg.on {
+    display: block;
+}
+
+
+/*메인 이미지*/
+
+main .main_essential {
+    width: 100%;
+    height: 467px;
+    background: url('../img/Stores_top.png') no-repeat;
+}
+
+main .main_essential > p {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+main .main_essential > p:nth-child(1) {
+    padding-top: 173px;
+}
+
+main .main_essential > p:nth-child(2) {
+    margin-top: 22px;
+    width: 43px;
+    height: 1px;
+    background-color: #c1a774;
+}
+
+main .main_essential > p:nth-child(3) {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/*서브gnb*/
+
+main .sub_gnb {
+    width: 100%;
+    height: 53px;
+    background-color: #f4f4f3;
+}
+
+main .sub_gnb ul {
+    width: 400px;
+    height: 53px;
+    line-height: 53px;
+    margin: 0 auto;
+}
+
+main .sub_gnb ul li {
+    float: left;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+main .sub_gnb ul li a {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+main .sub_gnb ul li a:hover {
+    color: #c1a774
+}
+
+
+/*메인 컨텐츠1*/
+
+main .box {
+    width: 1200px;
+    height: 1629px;
+    margin: 0 auto;
+}
+
+main .box01 {
+    width: 1120px;
+    height: 782px;
+    margin: 0 auto;
+}
+
+main .box02 {
+    width: 1120px;
+    height: 782px;
+    margin: 0 auto;
+}
+
+main .boxs02 {
+    width: 930px;
+    height: 615px;
+    margin: 0 auto;
+}
+
+
+main .box_txt {
+    width: 100%;
+    height: 90px;
+    margin: 87px auto 54px;
+    text-align: center;
+}
+
+main .box_txt h2 {
+    text-align: center;
+    font-family: 'Nanum Gothic';
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: -1px;
+    color: #c1a774;
+}
+
+main .box_txt .gold_line02 {
+    width: 60px;
+    height: 1px;
+    margin: 8px auto 12px;
+    background-color: #c1a774;
+}
+
+main .box_txt p {
+    margin-top: 9px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #707070;
+}
+
+main .boxs01 div {
+    float: left;
+}
+
+
+/*이미지 슬라이드*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+    line-height: 1
+}
+
+.photo_gallery {
+    position: relative;
+    width: 1120px;
+    background: #fff;
+    border: 1px solid #707070
+}
+
+.pho .photo_gallery p.photo_img {
+    width: 1120px;
+    height: 425px;
+}
+
+.photo_gallery p.photo_img img {
+    display: block;
+    width: 1120px;
+    height: 425px;
+    cursor: pointer;
+}
+
+.photo_gallery .photo_list {
+    width: 1120px;
+    overflow: hidden;
+}
+
+.photo_gallery .photo_list .list_wrap ul {
+    width: 1120px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+.photo_gallery .photo_list .list_wrap ul li {
+    float: left;
+    width: 280px;
+    height: 155px;
+    line-height: 0;
+}
+
+.photo_gallery .photo_list .list_wrap ul li a img {
+    width: 280px;
+    height: 155px;
+    vertical-align: middle;
+}
+
+.photo_gallery .photo_list .list_wrap ul li.active a img {}
+
+.photo_gallery button {
+    position: absolute;
+    bottom: 60px;
+    cursor: pointer;
+}
+
+.photo_gallery button.btn_prev {
+    left: 20px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background: url(../img/a17.png) no-repeat center center;
+}
+
+.photo_gallery button.btn_next {
+    right: 0px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: none;
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background: url(http://everstory.co.kr/images/btn_next.png) no-repeat left top;
+}
+
+
+/*슬라이드 p*/
+
+div .box > .box01 > .boxs01 > .photo_gallery > .photo_list > .list_wrap > ul li div.p_wrap {
+    position: relative;
+}
+
+div .box > .box01 > .boxs01 > .photo_gallery > .photo_list > .list_wrap > ul li p.info_p01 {
+    position: absolute;
+    top: 77px;
+    text-align: right;
+    /*left:32px;*/
+    width: 250px;
+    color: #fff;
+    z-index: 10;
+}
+
+div .box > .box01 > .boxs01 > .photo_gallery > .photo_list > .list_wrap > ul li div.info_line {
+    position: absolute;
+    top: 93px;
+    left: 232px;
+    /*left:32px;*/
+    width: 16px;
+    height: 1px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+div .box > .box01 > .boxs01 > .photo_gallery > .photo_list > .list_wrap > ul li p.info_p02 {
+    position: absolute;
+    top: 107px;
+    text-align: right;
+    width: 250px;
+    color: #fff;
+    z-index: 10;
+}
+
+
+/*패턴 배경*/
+
+main .pattern {
+    position: absolute;
+    top: 1340px;
+    width: 100%;
+    height: 259px;
+    background: url('../img/pattern.png') no-repeat;
+    z-index: -1;
+}
+
+
+/*nth-child 컨텐츠2*/
+
+main .boxs02 div {
+    float: left;
+}
+
+main .boxs02 div:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    margin: 0 15px 15px 0;
+}
+
+main .boxs02 div:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    margin: 0 15px 15px 0;
+}
+
+main .boxs02 div:nth-child(3) {
+    width: 300px;
+    height: 300px;
+    margin: 0 0 15px 0;
+}
+
+main .boxs02 div:nth-child(4) {
+    width: 300px;
+    height: 300px;
+    margin-right: 15px;
+    background-color: green;
+}
+
+main .boxs02 div:nth-child(5) {
+    width: 300px;
+    height: 300px;
+    margin-right: 15px;
+    background-color: blue;
+}
+
+main .boxs02 div:nth-child(6) {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+/*호버*/
+
+main .boxs02 div {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+main .boxs02 div img {
+    transition: all 1.8s;
+}
+
+main .boxs02 div img:hover {
+    transform: scale(1.2)
+}
+
+main .boxs02 div p {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 300px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+main .boxs02 div p:hover {
+    display: none;
+}
+
+
+/*footer start*/
+
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 225px;
+    background: #464646;
+    color: #fefcfc;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.fo_contents > div ul li span {
+    font-size: 15px;
+    margin-bottom: 7px;
+    color: #fff;
+}
+
+.fo_contents > div ul li {
+    display: block;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.fo_contents > div ul li a {
+    display: block;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.fo_contents {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 45px;
+    box-sizing: border-box;
+}
+
+.fo_co_01 {
+    float: left;
+    margin-left: 75px;
+    margin-right: 143px
+}
+
+.fo_co_02 {
+    float: left;
+    margin-right: 144px
+}
+
+.fo_co_03 {
+    float: left;
+    margin-right: 143px
+}
+
+.fo_co_04 {
+    float: left;
+    margin-right: 142px
+}
+
+.fo_co_05 {
+    float: left;
+}
+
+.fo_co_05 > img {
+    padding-right: 5px;
+}
+
+.fo_co_sp_gab {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+address {
+    width: 100%;
+    height: 63px;
+    background: #000;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.addres {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.addre_ul {
+    display: block;
+    width: 1100px;
+    margin: 0 auto;
+    color: #fefcfc;
+    font-style: normal;
+    box-sizing: border-box;
+    height: 63px;
+    line-height: 63px;
+}
+
+.addre_ul > li {
+    float: left;
+    margin-right: 10px;
+}
+
+.addre_ul >.addre_ul_red {
+    color: #bd132e;
+}
+
+.familysite_li {
+    width: 150px;
+}
+
+.familysite {
+    background: #000;
+    border: none;
+    color: #fefcfc;
+    height: 16px;
+    font-size: 12px;
+    width: 130px;
+}

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/starfield04.css">
+
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/starfield04.js"></script>
+    <script src="js/starfield00.js"></script>
+    <title>레스토랑 &amp; 카페</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <select id="language">
+                <option>KOREAN</option>
+                <option>ENGLISH</option>
+                <option>JAPANESE</option>
+                <option>CHINESE</option>
+            </select>
+            <a href="index.html" class="top_logo">
+                <img src="img/new_pc_logo.png" alt="">
+            </a>
+
+            <div class="senlo">
+                <ul class="senlo_list">
+                    <li>
+                        <input type="text" class="seach">
+                    </li>
+                    <li><img src="img/icon_search_web.png" alt="" class="seach_button"></li>
+                    <li>|</li>
+                    <li>로그인</li>
+                </ul>
+            </div>
+
+        </header>
+        <nav>
+            <div class="gnb_wrap">
+                <ul class="gnb">
+                    <li><a href="starfield01.html" class="gnb00_a">스타필드 소개</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield01.html">소개</a></li>
+                            <li>|</li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield02.html" class="gnb00_a">주요매장</a>
+                        <ul class="gnb01">
+                            <li><a href="#">신세계백화점</a></li>
+                            <li>|</li>
+                            <li><a href="#">이마트 트레이더스</a></li>
+                            <li>|</li>
+                            <li><a href="#">메종시티아</a></li>
+                            <li>|</li>
+                            <li><a href="#">PK마켓</a></li>
+                            <li>|</li>
+                            <li><a href="#">일렉트로마트</a></li>
+                            <li>|</li>
+                            <li><a href="#">토이킹덤</a></li>
+                            <li>|</li>
+                            <li><a href="#">베이비서클</a></li>
+                            <li>|</li>
+                            <li><a href="#">한샘</a></li>
+                            <li>|</li>
+                            <li><a href="#">BMW MINI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="gnb00_a">엔터테인먼트</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield03_01.html">스포츠 몬스터</a></li>
+                            <li>|</li>
+                            <li><a href="starfield03_02.html">아쿠아 필드</a></li>
+                            <li>|</li>
+                            <li><a href="#">메가박스</a></li>
+                            <li>|</li>
+                            <li><a href="#">플레이타임</a></li>
+                            <li>|</li>
+                            <li><a href="#">영풍문고</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield04.html" class="gnb00_a">레스토랑&amp;카페</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield04.html">고메스트리트</a></li>
+                            <li>|</li>
+                            <li><a href="starfield04.html">잇토피아</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield05.html" class="gnb00_a">이벤트&amp;SNS</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield05.html">이벤트</a></li>
+                            <li>|</li>
+                            <li><a href="starfield05.html">SNS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield06.html" class="gnb00_a">고객의견</a>
+                        <ul class="gnb01">
+                            <li><a href="#">공지사항</a></li>
+                            <li>|</li>
+                            <li><a href="starfield06.html">FAQ</a></li>
+                            <li>|</li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb01_bg"></div>
+        </nav>
+        <main>
+            <section class="top_view">
+                <h3>매인이미지</h3>
+                <img src="img/new_pc_logo_2.png" alt="로고">
+                <div>
+                    <img src="img/h-ico1.png" alt="아이콘">
+                    <h1><img src="img/t_text.png" alt="매인문구"></h1>
+                </div>
+            </section>
+
+            <!--section.foodinfor:gome-->
+            <section class="f_infor_gome">
+                <h3>gomestreet안내박스</h3>
+                <article class="food_t_box">
+                    <h2>gomestreet안내</h2>
+                    <div class="gold_line"></div>
+                    <p class="c_text_p">광화문미진 · 의정부평양면옥 · 소호정 등의 노포에서부터,
+                        <br> 국내 맥주 마니아들의 트렌드 메카 데블스도어, 한국에 첫 선을 보이는 휘닉스얌차까지
+                        <br> 전문가들이 직접 눈으로 보고 혀로 확인하여 엄선한 맛집 만을 모았습니다. </p>
+                    <ul class="gold_line_txt">
+                        <li></li>
+                        <li><em>store</em>
+                            <br>관련매장</li>
+                        <li></li>
+                    </ul>
+
+
+                    <!--            div.container>(a[href=#]>div>P.store+p>em{상세보기})*12-->
+                    <div class="container">
+                        <div class="s_group_gome">
+                            <div class="store_gome store_gome01">
+                                <P>소호정</P>
+                                <p>031-8072-8278
+                                    <em class="s_em em01">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_gome store_gome02">
+                                <P>팥고당</P>
+                                <p>031-8072-8281
+                                    <em class="s_em em02">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_gome store_gome03">
+                                <P>팥고당</P>
+                                <p>031-8072-8284
+                                    <em class="s_em em03">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_gome store_gome04">
+                                <P>아오키</P>
+                                <p>031-8072-8290
+                                    <em class="s_em em04">상세보기</em>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="s_group_gome">
+                            <div class="store_gome store_gome05">
+                                <P>데블스도어</P>
+                                <p>031-8072-8292
+                                    <em class="s_em em05">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_gome store_gome06">
+                                <P>광화문 미진</P>
+                                <p>031-8072-8279
+                                    <em class="s_em em06">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_gome store_gome07">
+                                <P>평양면옥</P>
+                                <p>031-8072-8282
+                                    <em class="s_em em07">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_gome store_gome08">
+                                <P>젤라띠젤라띠</P>
+                                <p>031-8072-8285
+                                    <em class="s_em em08">상세보기</em>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="s_group_gome">
+                            <div class="store_gome store_gome09">
+                                <P>베키아에누보</P>
+                                <p>031-8072-8288
+                                    <em class="s_em em09">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_gome store_gome10">
+                                <P>교토 카츠규</P>
+                                <p>031-8072-8291
+                                    <em class="s_em em10">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_gome store_gome11">
+                                <P>한우리</P>
+                                <p>031-8072-8280
+                                    <em class="s_em em11">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_gome store_gome12">
+                                <P>스타벅스</P>
+                                <p>031-8072-8283
+                                    <em class="s_em em12">상세보기</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="f_group">
+                    <h3>음식그룹</h3>
+                    <div class="map_box">
+                    </div>
+                    <div class="f_img_group">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </article>
+
+                <!--article.f_group_on-->
+                <article class="f_group_on">
+                    <h3>지도이미지 확대</h3>
+                    <div class="map_box_on">
+                        <div class="m_nav">
+                            <a href="#" onclick="return false" title="지도축소"><i class="fa fa-arrows"></i></a>
+                            <div></div>
+                            <a href="#" onclick="return false" title="지도확대"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="f_img_group_on">
+                        <img src="img/r_logo.png" alt="식당 로고">
+                    </div>
+                </article>
+            </section>
+            <!--section.foodinfor:gome 끝-->
+
+            <!--section.foodinfor:eatopia 시작-->
+            <section class="f_infor_eatopia">
+                <h3>eatopia안내</h3>
+                <article class="food_t_box_eatopia">
+                    <h2>eatopia안내</h2>
+                    <div class="gold_line"></div>
+                    <p class="c_text_p">한일관 · 문배동육칼 · 시골막국수 등 한국인의 소울푸드, 초마 · 탄탄면공방 · 청키면가 등 아시안 퀴진,
+                        <br> 이준 · 이형준 · 데이비드현 · 이종서 등 스타셰프가 새롭게 선보이는 서양식까지
+                        <br> 동서양을 넘나들며 미식의 폭을 넓히는 경험이 가능한 원스톱 다이닝 스페이스입니다.</p>
+                    <ul class="gold_line_txt">
+                        <li></li>
+                        <li><em>store</em>
+                            <br>관련매장</li>
+                        <li></li>
+                    </ul>
+
+
+                    <!--            div.container>(a[href=#]>div>P.store+p>em{상세보기})*12-->
+                    <div class="container_eatopia">
+                        <div class="s_group_eatopia">
+                            <div class="store_eatopia store_eatopia01">
+                                <P>폴바셋</P>
+                                <p>031-8072-8432
+                                    <em class="s_eat eat01">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_eatopia store_eatopia02">
+                                <P>핏제리아오</P>
+                                <p>031-8072-8435
+                                    <em class="s_eat eat02">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_eatopia store_eatopia03">
+                                <P>팥고당</P>
+                                <p>031-8072-8284
+                                    <em class="s_eat eat03">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_eatopia store_eatopia04">
+                                <P>아오키</P>
+                                <p>031-8072-8290
+                                    <em class="s_eat eat04">상세보기</em>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="s_group_eatopia">
+                            <div class="store_eatopia store_eatopia05">
+                                <P>데블스도어</P>
+                                <p>031-8072-8292
+                                    <em class="s_eat eat05">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_eatopia store_eatopia06">
+                                <P>광화문 미진</P>
+                                <p>031-8072-8279
+                                    <em class="s_eat eat06">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_eatopia store_eatopia07">
+                                <P>평양면옥</P>
+                                <p>031-8072-8282
+                                    <em class="s_eat eat07">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_eatopia store_eatopia08">
+                                <P>젤라띠젤라띠</P>
+                                <p>031-8072-8285
+                                    <em class="s_eat eat08">상세보기</em>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="s_group_eatopia">
+                            <div class="store_eatopia store_eatopia09">
+                                <P>베키아에누보</P>
+                                <p>031-8072-8288
+                                    <em class="s_eat eat09">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_eatopia store_eatopia10">
+                                <P>교토 카츠규</P>
+                                <p>031-8072-8291
+                                    <em class="s_eat eat10">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_eatopia store_eatopia11">
+                                <P>한우리</P>
+                                <p>031-8072-8280
+                                    <em class="s_eat eat11">상세보기</em>
+                                </p>
+                            </div>
+                            <div class="store_eatopia store_eatopia07">
+                                <P>스타벅스</P>
+                                <p>031-8072-8283
+                                    <em class="s_eat eat12">상세보기</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="f_group_eatopia">
+                    <h3>잇토피아 지도</h3>
+                    <div class="map_box_eatopia">
+                        <!--
+                        <div class="map">
+                        </div>
+-->
+                    </div>
+                    <div class="f_img_group_eatopia">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </article>
+
+                <!--article.f_group_on-->
+                <article class="f_group_on_eatopia">
+                    <h3>잇토피아지도안내</h3>
+                    <div class="map_box_on_eatopia">
+                        <div class="m_nav_eatopia">
+                            <a href="#" onclick="return false" title="지도축소"><i class="fa fa-arrows"></i></a>
+                            <div></div>
+                            <a href="#" onclick="return false" title="지도확대"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="f_img_group_on_eatopia">
+                        <img src="img/r_e_logo1.png" alt="식당 로고">
+                    </div>
+                </article>
+            </section>
+            <!--section.foodinfor:eatopia 끝 -->
+            <section class="patten">
+                <h3>패턴이미지</h3>
+            </section>
+
+        </main>
+        <footer>
+            <div class="fo_contents">
+                <div class="fo_co_01">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">스타필드하남</span></li>
+                        <li class="fo_co_p">경기도 하남시 미사대로 750</li>
+                        <li>starfield@starfield.co.kr</li>
+                        <li>1833 - 9001</li>
+                    </ul>
+                </div>
+                <div class="fo_co_02">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">회사소개</span></li>
+                        <li class="fo_co_p"><a href="#">신세계 프라퍼티</a></li>
+                        <li><a href="#">터브먼 아시아</a></li>
+                    </ul>
+                </div>
+                <div class="fo_co_03">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">협력사 상담</span></li>
+                        <li class="fo_co_p"><a href="#">상담신청 및 입점 안내</a></li>
+                    </ul>
+                </div>
+                <div class="fo_co_04">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">언어</span></li>
+                        <li class="fo_co_p"><a href="#">한국어</a></li>
+                        <li><a href="#">영어</a></li>
+                        <li><a href="#">일본어</a></li>
+                        <li><a href="#">중국어</a></li>
+                    </ul>
+                </div>
+                <div class="fo_co_05">
+                    <img src="img/sns_icon_01.png" alt="sns01">
+                    <img src="img/sns_icon_02.png" alt="sns02">
+                    <img src="img/sns_icon_03.png" alt="sns03">
+                </div>
+            </div>
+            <address>
+    	<div class="addres">
+    	<ul class="addre_ul">
+    		<li>Copyright ⓒ 1996-2016  HANAM UNION SQUARE CO .LTD All Rights Reserved.</li>
+    		<li>|</li>
+    		<li>이용약관</li>
+    		<li>|</li>
+    		<li class="addre_ul_red">개인정보취급(처리)방침</li>
+    		<li>|</li>
+    		<li>위치기반서비스이용약관</li>
+    		<li>|</li>
+    		<li>개인정보관리책임자 : 강필서</li>
+    		<li>|</li>
+    		<li class="familysite_li">
+    			<select class="familysite">
+					<option value="http://www.naver.com">패밀리사이트</option>
+					<option value="http://www.naver.com">신세계블로그</option>
+					<option value="http://www.naver.com">신세계백화점</option>
+					<option value="http://www.naver.com">이마트</option>
+			    	<option value="http://www.naver.com">SSG.COM</option>
+					<option value="http://www.naver.com">이마트 에브리데이</option>
+					<option value="http://www.naver.com">신세계 포인트</option>
+					<option value="http://www.naver.com">신세계 면세점</option>
+					<option value="http://www.naver.com">신세계 I&amp;C</option>
+					<option value="http://www.naver.com">신세계건설</option>
+					<option value="http://www.naver.com">신세계푸드</option>
+					<option value="http://www.naver.com">신세계인터내셔날</option>
+					<option value="http://www.naver.com">프리미엄 아울렛</option>
+					<option value="http://www.naver.com">스타벅스 커피 코리아</option>
+					<option value="http://www.naver.com">웨스틴 조선호텔</option>
+				</select>
+    		</li>
+    	</ul>
+    	</div>
+    </address>
+        </footer>
+
+    </div>
+</body>
+
+</html>

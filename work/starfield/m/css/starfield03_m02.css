@@ -1,0 +1,483 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+/*font-family: 'Nanum Gothic', sans-serif;*/
+
+
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    border: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    background: #ddd;
+    position: relative;
+    width: 640px;
+    min-width: 320px;
+    max-width: 640px;
+}
+
+
+/*header*/
+
+#wrap {
+    width: 100%;
+    height: 1130px;
+    background: #fff;
+}
+
+header {
+    width: 100%;
+    height: 92px;
+}
+
+#gnb_menubtn {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    cursor: pointer;
+}
+
+#top_logo {
+    position: absolute;
+    left: 320px;
+    top: 10px;
+    margin-left: -72px;
+    cursor: pointer;
+}
+
+#seachbtn {
+    position: absolute;
+    right: 20px;
+    top: 26px;
+    cursor: pointer;
+}
+
+.click_blind {
+    width: 640px;
+    height: 1130px;
+    position: absolute;
+    top: 0;
+    background: rgba(47, 46, 46, 0.8);
+    display: none;
+}
+
+.gnb_wrap {
+    position: absolute;
+    z-index: 600;
+    top: 0px;
+    width: 566px;
+    background: #fff;
+    display: none;
+}
+
+.gnb_wrap.on {
+    display: block;
+}
+
+.gnb000 {
+    width: 100%;
+    height: 144px;
+    background: #2c2e33;
+}
+
+.mobile_gnblogo {
+    position: absolute;
+    left: 283px;
+    top: 72px;
+    margin-top: -45px;
+    margin-left: -80px;
+    height: 90px;
+}
+
+.x {
+    position: absolute;
+    top: 72px;
+    margin-top: -13px;
+    left: 520px;
+    cursor: pointer;
+}
+
+#accordian {
+    background: #2c2e33;
+    width: 566px;
+    max-height: 1038px;
+    text-align: center;
+    overflow: auto;
+}
+
+
+/* 메뉴 스타일 */
+
+#accordian h3 {
+    font-size: 30px;
+    color: #8c8e92;
+    line-height: 34px;
+    padding: 30px 0;
+    cursor: pointer;
+    border-top: 2px solid #414141;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR';
+}
+
+#accordian h3.off {
+    font-size: 30px;
+    color: #666;
+    line-height: 34px;
+    padding: 30px 0;
+    cursor: pointer;
+    border-top: 2px solid #f0f0f0;
+    box-sizing: border-box;
+}
+
+#accordian h3.on {
+    background: #000;
+    color: #fff;
+}
+
+
+/* 서브메뉴 스타일 */
+
+#accordian ul > li > ul {
+    border-top: 1px solid #4b4949;
+    border-bottom: 1px solid #4b4949;
+}
+
+#accordian ul > li > ul > li > a {
+    color: white;
+    display: block;
+    font-size: 25px;
+    color: #8c8e92;
+    padding: 25px 0;
+    display: block;
+    background: #252528;
+    /*border:1px solid #fff;*/
+    box-sizing: border-box;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    transition: all 0.15s;
+    font-family: 'Noto Sans KR';
+}
+
+#accordian ul ul li a:hover {
+    font-weight: bold;
+}
+
+
+/* active 클래스 외에 것은 보이지 않게 하기 */
+
+#accordian ul ul {
+    display: none;
+}
+
+#accordian li.active ul {
+    display: block;
+}
+
+
+/*header & gnb 끝*/
+
+
+/*메인 이미지*/
+
+#content {
+    font-family: 'Noto Sans KR';
+    width: 640px;
+    height: 933px;
+    color: #eee;
+    font-size: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+h6 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+section.main_img {
+    height: 349px;
+}
+
+section div.text_box {
+    width: 500px;
+    height: 122px;
+}
+
+.text_box {
+    width: 640px;
+    height: 74px;
+    margin: 60px auto 40px;
+}
+
+.c_text {
+    text-align: center;
+    font-family: 'Nanum Gothic';
+    font-weight: 600;
+    font-size: 31px;
+    letter-spacing: -1px;
+    color: #c1a774;
+}
+
+.gold_line {
+    width: 56px;
+    height: 1px;
+    margin: 6px auto 10px;
+    background-color: #c1a774;
+}
+
+.c_text_p {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #707070;
+}
+
+
+/*slider*/
+
+.cycle-slideshow,
+.cycle-slideshow * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cycle-slideshow {
+    width: 640px;
+    height: 440px;
+    margin: 10px auto;
+    padding: 0;
+    position: relative;
+}
+
+
+
+.cycle-slideshow img {
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    display: block;
+}
+
+
+/* in case script does not load */
+
+.cycle-slideshow img:first-child {
+    position: static;
+    z-index: 100;
+}
+
+
+/* pager */
+
+.cycle-pager {
+    text-align: center;
+    width: 100%;
+    z-index: 500;
+    position: absolute;
+    bottom: 10px;
+    overflow: hidden;
+}
+
+.cycle-pager span {
+    font-family: arial;
+    font-size: 50px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    color: rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+}
+
+.cycle-pager span.cycle-pager-active {
+    /*  color: #D69746;*/
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.cycle-pager > * {
+    cursor: pointer;
+}
+
+
+/*시설안내 링크박스*/
+
+.all .info_go {
+    margin-bottom: 50PX;
+}
+
+.all .info_go ul {
+    width: 390px;
+    height: 95px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR';
+    overflow: hidden;
+}
+
+.all .info_go ul li {
+    float: left;
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    color: #000000;
+    margin-right: 5px;
+    margin-bottom: 4px;
+    border: 1px solid #c1a774;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.all .info_go ul li:hover {
+    border: none;
+    background-color: #c1a774;
+    color: #fff;
+}
+
+
+/*footer 시작*/
+
+footer {
+    width: 100%;
+    height: 105px;
+    background: #f5f5f5;
+}
+
+.fooer_icon {
+    width: 613px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.fo_ic_p {
+    color: #b1a9a3;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+    text-align: center;
+    float: left;
+    width: 105px;
+    height: 80px;
+    /*border:1px solid red;*/
+    font-weight: 500;
+}
+
+.fo_ic_p:nth-child(3) a {
+    color: #c51c37;
+}
+
+.fooer_icon > p > a {
+    display: block;
+    color: #b1a9a3;
+    font-weight: bold;
+}
+
+.fooer_icon > p > a >em {
+    display: inline-block;
+    padding: 0;
+    width: 53px;
+    height: 53px;
+    /*border:1px solid red;*/
+}
+
+.fooer_icon > p:nth-child(1) > a > em {
+    background: url(../img/footer_icon01.png) no-repeat center center;
+}
+
+.fooer_icon > p:nth-child(2) > a > em {
+    background: url(../img/footer_icon02.png) no-repeat center center;
+}
+
+.footer_on {
+    background: url(../img/footer_icon03.png) no-repeat center center;
+}
+
+.fooer_icon > p:nth-child(4) > a > em {
+    background: url(../img/footer_icon04.png) no-repeat center center;
+}
+
+.fooer_icon > p:nth-child(5) > a > em {
+    background: url(../img/footer_icon05.png) no-repeat center center;
+}
+
+.fooer_icon > p:nth-child(1):hover > a {
+    color: #c51c37;
+}
+
+.fooer_icon > p:nth-child(1):hover > a > em {
+    background: url(../img/footer_icon01_hover.png) no-repeat center center;
+}
+
+.fooer_icon > p:nth-child(2):hover > a > em {
+    background: url(../img/footer_icon02_hover.png) no-repeat center center;
+}
+
+.fooer_icon > p:nth-child(2):hover > a {
+    color: #c51c37;
+}
+
+.fooer_icon > p:nth-child(4):hover > a > em {
+    background: url(../img/footer_icon04_hover.png) no-repeat center center;
+}
+
+.fooer_icon > p:nth-child(4):hover > a {
+    color: #c51c37;
+}
+
+.fooer_icon > p:nth-child(5):hover > a > em {
+    background: url(../img/footer_icon05_hover.png) no-repeat center center;
+}
+
+.fooer_icon > p:nth-child(5):hover > a {
+    color: #c51c37;
+}
+
+.fooer_icon_p {
+    margin-right: 22px;
+}
+
+.fooer_icon_p:nth-child(5) {
+    margin-right: 0;
+}
+
+
+/*footer 끝*/

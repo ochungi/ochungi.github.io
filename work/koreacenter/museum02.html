@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.56">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/museum02.css">
+
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/koreamuseum.js"></script>
+
+    <title>관람정보</title>
+</head>
+
+<body>
+    <!--header start-->
+    <header>
+        <div class="top">
+            <div class="seach">
+                <ul>
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>예약예매</li>
+                    <li>
+                        <input type="text">
+                    </li>
+                </ul>
+                <div class="m_btn_menu">
+                    <a href="index.html"><img src="img/top_logo.png" class="m_logo" alt=""></a>
+                    <img src="img/x.png" alt="" class="x_btn">
+                </div>
+            </div>
+            <div class="gnb">
+                <a href="index.html" class="top_logo"><img src="img/top_logo.png" alt="#"></a>
+                <img src="img/m_btn.PNG" alt="" class="btnMenu">
+                <ul class="menu">
+                    <li class="gnb_on"><a href="museum02.html">관람정보</a></li>
+                    <li><a href="#">전시</a></li>
+                    <li><a href="museum01.html">교육</a></li>
+                    <li><a href="#">소장품</a></li>
+                    <li><a href="#">소개</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+    <!--main img-->
+    <div class="main_img">
+        <div class="bg_img"></div>
+        <div class="sub_gnb">
+            <ul>
+                <li id="sub_gnb_on"><a href="#i1">관람안내</a></li>
+                <li><a href="#i2">전시해설안내</a></li>
+                <li><a href="#i3">예약예매안내</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="display_info" id="i1">
+            <h2 class="co_h2">관람안내</h2>
+            <div class="dis_ifo_co">
+                <div class="dis_info_box">
+                    <div class="dis_info_ic_box">
+                        <em class="dis_info_ic"></em>
+                        <span>관람시간</span>
+                    </div>
+                    <p>
+                        화/목/금요일 : 09:00 ~ 18:00
+                        <br> 수/토요일 : 09:00 ~ 21:00
+                        <br> 일요일/공휴일 : 09:00 ~ 19:00
+                        <br> (단, 1월 1일 제외)
+                        <br>
+                    </p>
+                </div>
+                <div class="dis_info_box">
+                    <div class="dis_info_ic_box">
+                        <em class="dis_info_ic"></em>
+                        <span>관람료</span>
+                    </div>
+                    <p>무료: 상설전시관, 무료 특별전시
+                        <br> 상설전시관은 관람권 없이 바로 입장합니다.
+                        <br> 관람권 발급 시간 : 관람 종료 30분 전까지
+                        <br> 유료: 유료 기획전시
+                        <br> 관람권 구입하는 곳 : 기획전시실 앞 매표소
+                        <br> 관람권 판매시간 : 관람 종류 30 분 전까지
+                        <br>
+                    </p>
+                </div>
+                <div class="dis_info_box">
+                    <div class="dis_info_ic_box">
+                        <em class="dis_info_ic"></em>
+                        <span>오시는길</span>
+                    </div>
+                    <p>
+                        4호선 이촌역(국립중앙박물관)역에서
+                        <br> 2번출구로 나와 150m 직진하시면
+                        <br> 서문이 나옵니다.
+                        <br> 서문을 따라 오시면
+                        <br> 국립중앙박물관이 나옵니다.
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="explain_info" id="i2">
+            <h2 class="co_h2">전시해설안내</h2>
+            <table class="explain_info_table">
+                <tr class="explain_info_tr">
+                    <th>해설코스</th>
+                    <th colspan="2">모이는곳</th>
+                    <th>해설시간</th>
+                </tr>
+                <tr class="explain_info_tr_td">
+                    <td>전관해설
+                        <br>(대표소장품)</td>
+                    <td colspan="2">상설전시관 안내데스크</td>
+                    <td>
+                        <p class="table_p_gap">
+                            1회 10:00 ~ 11:00
+                            <br> 2회 11:00 ~ 12:00
+                            <br>
+                        </p>
+                        <p>
+                            3회 14:00 ~ 15:00
+                            <br> 4회 15:00 ~ 16:00
+                            <br>
+                        </p>
+                    </td>
+
+                </tr>
+                <tr class="explain_info_tr_td">
+                    <td rowspan="6">전시관별 해설</td>
+                    <td>선사 · 고대관</td>
+                    <td>1층 구석기실 입구(101호)</td>
+                    <td rowspan="6">
+                        <p class="table_p_gap">
+                            1회 10:00 ~ 11:00
+                            <br> 2회 11:00 ~ 12:00
+                            <br>
+                        </p>
+                        <p>
+                            3회 14:00 ~ 15:00
+                            <br> 4회 15:00 ~ 16:00
+                            <br>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="explain_info_tr_td">
+                    <td>중 · 근세관</td>
+                    <td>1층 고려1실 입구(113호)</td>
+                </tr>
+                <tr class="explain_info_tr_td">
+                    <td>기증관</td>
+                    <td>2층 이홍근 기증실 입구(205호)
+                        <br>(수/토요일만 운영)</td>
+                </tr>
+                <tr class="explain_info_tr_td">
+                    <td>서화관</td>
+                    <td>2층 서예실 입구(201호)</td>
+                </tr>
+                <tr class="explain_info_tr_td">
+                    <td>아시아관</td>
+                    <td>3층 인도 동남아시아실 입구(306호)</td>
+                </tr>
+                <tr class="explain_info_tr_td">
+                    <td>조각 · 공예관</td>
+                    <td>3층 불교 조각실 입구(301호)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="explain_info_m">
+            <h3 class="ta_ca">- 전관 해설(대표소장품)</h3>
+            <table class="explain_info_table_m1 m1_1">
+                <tr class="explain_info_table_m1_1sttr">
+                    <th class="tr_th tr1th">모이는곳</th>
+                    <th class="tr_th tr1th">해설시간</th>
+                </tr>
+                <tr>
+                    <td class="tr_td ">상설전시관 으뜸홀 안내데스크</td>
+                    <td class="tr_td">
+                        <p class="ta_m_p">
+                            1회 10:00 ~ 11:00
+                            <br> 2회 11:00 ~ 12:00
+                        </p>
+                        <p>
+                            3회 14:00 ~ 15:00
+                            <br> 4회 15:00 ~ 16:00
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <h3 class="ta_ca">- 전시관별 해설</h3>
+            <table class="explain_info_table_m1 m1_2">
+                <tr class="explain_info_table_m1_1sttr">
+                    <th colspan="2" class="tr_th tr2th">모이는곳</th>
+                    <th class="tr_th tr3th">해설시간</th>
+                </tr>
+                <tr>
+                    <td class="tr_td">선사 · 고대관</td>
+                    <td class="tr_td">1층 구석기실 입구(101호)</td>
+                    <td rowspan="6" class="tr_td">
+                        <p class="ta_m_p">
+                            1회 10:00 ~ 11:00
+                            <br> 2회 11:00 ~ 12:00
+                        </p>
+                        <p>
+                            3회 14:00 ~ 15:00
+                            <br> 4회 15:00 ~ 16:00
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tr_td">중 · 근세관</td>
+                    <td class="tr_td">1층 고려1실 입구(113호)</td>
+                </tr>
+                <tr>
+                    <td class="tr_td">기증관</td>
+                    <td class="tr_td">2층 이홍근 기증실 입구(205호)
+                        <br>(수 / 토요일만 운영)</td>
+                </tr>
+                <tr>
+                    <td class="tr_td">서화관</td>
+                    <td class="tr_td">2층 서예실 입구(201호)</td>
+                </tr>
+                <tr>
+                    <td class="tr_td">아시아관</td>
+                    <td class="tr_td">3층 인도 동남아시아실 입구(306호)</td>
+                </tr>
+                <tr>
+                    <td class="tr_td">조각 · 공예관</td>
+                    <td class="tr_td">3층 불교조각실 입구(301호)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="explain_txt">
+            <div class="explain_txt01">
+                <p>박물관 명품해설</p>
+                <p>
+                    - 국립중앙박물관의 명품을 관람합니다.
+                    <br> - 성인 · 기관 등 10인~40인 단체는 희망일 하루 전까지 전화로 신청하십시오.
+                    <br> (월요일은 박물관 휴관일로 화요일 관람 예약은 일요일까지 신청하시기 바랍니다.문의전화: 02-2077-9684, 9685)
+                    <br>
+                </p>
+            </div>
+            <div class="explain_txt01">
+                <p>이야기가 있는 전시해설 스마트 큐레이터</p>
+                <p>
+                    - 태블릿PC를 활용한 스토리텔링형 신개념 전시해설을 마련하였습니다.
+                    <br> - 평일 16:00 토요일 및 일요일 10:00, 16:00
+                    <br> - 1월과 8월 평일(화~금) 14:00, 16:00
+                    <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="book" id="i3">
+            <h2 class="co_h2">예약예매안내</h2>
+            <div class="book01">
+                <div class="book01_1_1">
+                    <span>학생단체 관람예약 </span>
+                    <p>
+                        - 초/중/고등학교 학생 단체(30명 이상)대상의 박물관 관람은 사전예약제로 운영하고 있습니다.
+                        <br> (현재 일부터 180일간. 단, 관람희망일 하루전까지 가능)
+                    </p>
+                </div>
+                <div class="book01_1_2">
+                    <a href="#" class="book_btn2_gap">예약하러가기</a>
+                </div>
+            </div>
+            <div class="book01" id="book01_2">
+                <div class="book01_2_1">
+                    <span>교육예약</span>
+                    <p>
+                        박물관에서는 다양한 계층을 대상으로 교육 프로그램을 제공하고 있습니다.
+                    </p>
+                </div>
+                <div class="book01_1_2">
+                    <a href="#" class="book_btn_gap">진행중인<br>교육보러가기</a>
+                    <a href="#" class="book_btn2_gap">예약하러가기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--content end-->
+    <!--footer start-->
+    <footer>
+        <div class="fo_conte">
+            <div class="fo_con_list">
+                <ul class="fo_con_ul">
+                    <li>개인정보처리방침</li>
+                    <li>고객서비스현장</li>
+                    <li>이메일무단수집거부</li>
+                    <li>고객의 소리</li>
+                </ul>
+            </div>
+
+            <div class="adress">
+                04383 서울시 용산구 서빙고로 137
+                <br> 대표전화 02.2077.9000
+                <br> &copy;NATIONAL MUSSEUM OF KOREA
+                <br>
+            </div>
+
+            <div class="snsSet">
+                <ul>
+                    <li><img src="img/sns_img01.png" alt=""></li>
+                    <li><img src="img/sns_img02.png" alt=""></li>
+                    <li><img src="img/sns_img03.png" alt=""></li>
+                    <li><img src="img/sns_img04.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

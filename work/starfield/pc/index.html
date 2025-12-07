@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/starfield00.css">
+
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/starfield00.js"></script>
+    <title>스타필드</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <select id="language">
+                <option>KOREAN</option>
+                <option>ENGLISH</option>
+                <option>JAPANESE</option>
+                <option>CHINESE</option>
+            </select>
+            <a href="index.html" class="top_logo">
+                <img src="img/new_pc_logo.png" alt="">
+            </a>
+
+            <div class="senlo">
+                <ul class="senlo_list">
+                    <li>
+                        <input type="text" class="seach">
+                    </li>
+                    <li><img src="img/icon_search_web.png" alt="" class="seach_button"></li>
+                    <li>|</li>
+                    <li>로그인</li>
+                </ul>
+            </div>
+
+        </header>
+        <nav>
+            <div class="gnb_wrap">
+                <ul class="gnb">
+                    <li><a href="starfield01.html" class="gnb00_a">스타필드 소개</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield01.html">소개</a></li>
+                            <li>|</li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield02.html" class="gnb00_a">주요매장</a>
+                        <ul class="gnb01">
+                            <li><a href="#">신세계백화점</a></li>
+                            <li>|</li>
+                            <li><a href="#">이마트 트레이더스</a></li>
+                            <li>|</li>
+                            <li><a href="#">메종시티아</a></li>
+                            <li>|</li>
+                            <li><a href="#">PK마켓</a></li>
+                            <li>|</li>
+                            <li><a href="#">일렉트로마트</a></li>
+                            <li>|</li>
+                            <li><a href="#">토이킹덤</a></li>
+                            <li>|</li>
+                            <li><a href="#">베이비서클</a></li>
+                            <li>|</li>
+                            <li><a href="#">한샘</a></li>
+                            <li>|</li>
+                            <li><a href="#">BMW MINI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="gnb00_a">엔터테인먼트</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield03_01.html">스포츠 몬스터</a></li>
+                            <li>|</li>
+                            <li><a href="starfield03_02.html">아쿠아 필드</a></li>
+                            <li>|</li>
+                            <li><a href="#">메가박스</a></li>
+                            <li>|</li>
+                            <li><a href="#">플레이타임</a></li>
+                            <li>|</li>
+                            <li><a href="#">영풍문고</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield04.html" class="gnb00_a">레스토랑&amp;카페</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield04.html">고메스트리트</a></li>
+                            <li>|</li>
+                            <li><a href="starfield04.html">잇토피아</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield05.html" class="gnb00_a">이벤트&amp;SNS</a>
+                        <ul class="gnb01">
+                            <li><a href="starfield05.html">이벤트</a></li>
+                            <li>|</li>
+                            <li><a href="starfield05.html">SNS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="starfield06.html" class="gnb00_a">고객의견</a>
+                        <ul class="gnb01">
+                            <li><a href="#">공지사항</a></li>
+                            <li>|</li>
+                            <li><a href="starfield06.html">FAQ</a></li>
+                            <li>|</li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb01_bg"></div>
+        </nav>
+
+        <main>
+            <section class="slideshow">
+                <div class="slideshow_slides">
+                    <a href="#" class="slide" id="slide1">
+                        <img src="img/bg11.png" alt="배경이미지1">
+                    </a>
+                    <a href="#" class="slide" id="slide2">
+                        <img src="img/bg2.png" alt="배경이미지2">
+                    </a>
+                    <a href="#" class="slide" id="slide3">
+                        <img src="img/bg2-2.png" alt="배경이미지2">
+                    </a>
+                    <a href="#" class="slide" id="slide4">
+                        <img src="img/bg2-1.png" alt="배경이미지2">
+                    </a>
+                </div>
+                <div class="slideshow_nav">
+                    <a href="#" class="prev">Prev</a>
+                    <a href="#" class="next">Next</a>
+                </div>
+
+                <div class="slideshow_indicator"></div>
+            </section>
+
+            <!--section.time-->
+            <section class="time">
+                <div class="text_box">
+                    <p class="c_text">operating hour</p>
+                    <div class="gold_line"></div>
+                    <p class="c_text_p ">스타필드의 운영시간</p>
+                </div>
+                <div class="time_bg">
+                    <p class="font_txt">오늘의 운영시간
+                        <br>
+                        <em>10:00 - 22:00</em>
+                    </p>
+                    <p>운영시간 더보기</p>
+                </div>
+            </section>
+            <section class="event">
+                <div class="text_box">
+                    <p class="c_text">STARFIELD NOW</p>
+                    <div class="gold_line"></div>
+                    <p class="c_text_p ">스타필드의 이벤트 &amp; 쿠폰</p>
+                </div>
+                <div class="event_wrap">
+                    <div>
+                        <a href="#"></a>
+                    </div>
+                    <div>
+                        <a href="#"></a>
+                    </div>
+                    <div>
+                        <a href="#"></a>
+                    </div>
+                    <div>
+                        <a href="#"></a>
+                    </div>
+                    <div>
+                        <a href="#"></a>
+                    </div>
+                    <div>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </section>
+            <section class="store_a">
+                <div class="text_box">
+                    <p class="c_text">STARFIELD NOW</p>
+                    <div class="gold_line"></div>
+                    <p class="c_text_p">스타필드의 이벤트 &amp; 쿠폰</p>
+                </div>
+                <div class="store_box">
+                    <ul>
+                        <li class="store_li store_li01">
+                            <div class="bg_div bg_div01">배경 hover이미지</div>
+                            <a href="#" onclick="return false">
+                                <img src="img/store_logo1.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line1.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="store_li store_li02">
+                            <div class="bg_div bg_div02">배경 hover이미지</div>
+                            <a href="#">
+                                <img src="img/store_logo2.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line1.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="store_li store_li03">
+                            <div class="bg_div bg_div03">배경 hover이미지</div>
+                            <a href="#">
+                                <img src="img/store_logo3.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line1.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="store_li store_li04">
+                            <div class="bg_div bg_div04">배경 hover이미지</div>
+                            <a href="#">
+                                <img src="img/store_logo4.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line1.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="store_li store_li05">
+                            <div class="bg_div bg_div05">배경 hover이미지</div>
+                            <a href="#">
+                                <img src="img/store_logo5.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line1.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="store_li store_li06">
+                            <div class="bg_div bg_div06">배경 hover이미지</div>
+                            <a href="#">
+                                <img src="img/store_logo6.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line1.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="store_li store_li07">
+                            <div class="bg_div bg_div07">배경 hover이미지</div>
+                            <a href="#">
+                                <img src="img/store_logo7.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line1.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="store_li store_li08">
+                            <div class="bg_div bg_div08">배경 hover이미지</div>
+                            <a href="#">
+                                <img src="img/store_logo8.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line1.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="store_li store_li09">
+                            <div class="bg_div bg_div09">배경 hover이미지</div>
+                            <a href="#">
+                                <img src="img/store_logo9.png" alt="주요매장로고">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--주요매장 hover-->
+
+
+            <!--주요매장 내용-->
+            <div class="store_box_on">
+                <h4>BMW MINI 시티 라운지</h4>
+                <p class="font">로마, 밀라노, 리스본에 이어 아시아 최초로 스타필드에
+                    <br> 오픈한 BMW MINI 시티 라운지(BMW MINI City Lounge)에서는
+                    <br> 특화된 전시공간과 다양한 멀티미디어를 통해
+                    <br> BMW와 MINI의 브랜드를 경험할 수 있습니다.</p>
+                <a href="#" onclick="return false"><i class="fa fa-window-close"></i></a>
+            </div>
+            <!--엔터테인먼트매장-->
+            <section class="store_b">
+                <div class="text_box">
+                    <p class="c_text">STARFIELD NOW</p>
+                    <div class="gold_line"></div>
+                    <p class="c_text_p ">스타필드의 이벤트 &amp; 쿠폰</p>
+                </div>
+                <div class="store_box_b">
+                    <ul>
+                        <li class="box_b_li box_b_li01">
+                            <div class="b_bg_div b_bg_div01"></div>
+                            <a href="#" onclick="return false">
+                                <img src="img/e_store_logo1.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line2.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="box_b_li box_b_li02">
+                            <div class="b_bg_div b_bg_div02"></div>
+                            <a href="#">
+                                <img src="img/e_store_logo2.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line2.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="box_b_li box_b_li03">
+                            <div class="b_bg_div b_bg_div03"></div>
+                            <a href="#">
+                                <img src="img/e_store_logo3.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line2.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="box_b_li box_b_li04">
+                            <div class="b_bg_div b_bg_div04"></div>
+                            <a href="#">
+                                <img src="img/e_store_logo4.png" alt="주요매장로고">
+                            </a>
+                            <span>
+                                <img src="img/s_line2.png" alt="주요매장 라인">
+                            </span>
+                        </li>
+                        <li class="box_b_li box_b_li05">
+                            <div class="b_bg_div b_bg_div05"></div>
+                            <a href="#">
+                                <img src="img/e_store_logo5.png" alt="주요매장로고">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="store_box_b_on">
+                    <h4>아쿠아필드</h4>
+                    <p class="font">하늘과 맞닿은 인피니티 풀에서 느긋이 즐기고 신비로운 오로라부터
+                        <br> 구름 위의 휴식까지 8가지 테마의 찜질 스파를 경험하는 곳
+                        <br> 들어서는 공간마다 색다른 휴식이 기다리는 아쿠아필드에서
+                        <br> 삶의 진짜 멋과 여유를 누리십시오.</p>
+                    <a href="#" onclick="return false"><i class="fa fa-window-close"></i></a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="fo_contents">
+                <div class="fo_co_01">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">스타필드하남</span></li>
+                        <li class="fo_co_p">경기도 하남시 미사대로 750</li>
+                        <li>starfield@starfield.co.kr</li>
+                        <li>1833 - 9001</li>
+                    </ul>
+                </div>
+                <div class="fo_co_02">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">회사소개</span></li>
+                        <li class="fo_co_p"><a href="#">신세계 프라퍼티</a></li>
+                        <li><a href="#">터브먼 아시아</a></li>
+                    </ul>
+                </div>
+                <div class="fo_co_03">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">협력사 상담</span></li>
+                        <li class="fo_co_p"><a href="#">상담신청 및 입점 안내</a></li>
+                    </ul>
+                </div>
+                <div class="fo_co_04">
+                    <ul>
+                        <li><span class="fo_co_sp_gab">언어</span></li>
+                        <li class="fo_co_p"><a href="#">한국어</a></li>
+                        <li><a href="#">영어</a></li>
+                        <li><a href="#">일본어</a></li>
+                        <li><a href="#">중국어</a></li>
+                    </ul>
+                </div>
+                <div class="fo_co_05">
+                    <img src="img/sns_icon_01.png" alt="sns01">
+                    <img src="img/sns_icon_02.png" alt="sns02">
+                    <img src="img/sns_icon_03.png" alt="sns03">
+                </div>
+            </div>
+            <address>
+    	<div class="addres">
+    	<ul class="addre_ul">
+    		<li>Copyright ⓒ 1996-2016  HANAM UNION SQUARE CO .LTD All Rights Reserved.</li>
+    		<li>|</li>
+    		<li>이용약관</li>
+    		<li>|</li>
+    		<li class="addre_ul_red">개인정보취급(처리)방침</li>
+    		<li>|</li>
+    		<li>위치기반서비스이용약관</li>
+    		<li>|</li>
+    		<li>개인정보관리책임자 : 강필서</li>
+    		<li>|</li>
+    		<li class="familysite_li">
+    			<select class="familysite">
+					<option value="http://www.naver.com">패밀리사이트</option>
+					<option value="http://www.naver.com">신세계블로그</option>
+					<option value="http://www.naver.com">신세계백화점</option>
+					<option value="http://www.naver.com">이마트</option>
+			    	<option value="http://www.naver.com">SSG.COM</option>
+					<option value="http://www.naver.com">이마트 에브리데이</option>
+					<option value="http://www.naver.com">신세계 포인트</option>
+					<option value="http://www.naver.com">신세계 면세점</option>
+					<option value="http://www.naver.com">신세계 I&amp;C</option>
+					<option value="http://www.naver.com">신세계건설</option>
+					<option value="http://www.naver.com">신세계푸드</option>
+					<option value="http://www.naver.com">신세계인터내셔날</option>
+					<option value="http://www.naver.com">프리미엄 아울렛</option>
+					<option value="http://www.naver.com">스타벅스 커피 코리아</option>
+					<option value="http://www.naver.com">웨스틴 조선호텔</option>
+				</select>
+    		</li>
+    	</ul>
+    	</div>
+    </address>
+        </footer>
+    </div>
+
+</body>
+
+</html>
