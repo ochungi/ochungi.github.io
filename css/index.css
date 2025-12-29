@@ -216,7 +216,8 @@ article p.desc01 {
 }
 
 .pf_box img{
-    width: 100%;
+    width: 300px;
+    height: auto;
 }
 .box_a {
     width: 100%;
