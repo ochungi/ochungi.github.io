@@ -1,0 +1,280 @@
+:root {
+    --bg: #0b0d12;
+    --text: rgba(255, 255, 255, .92);
+    --muted: rgba(255, 255, 255, .65);
+    --line: rgba(255, 255, 255, .14);
+    --radius: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", "Apple SD Gothic Neo";
+}
+
+/* 앵커 부드러운 이동 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 고정 헤더 때문에 섹션 상단 가림 방지 */
+section {
+    scroll-margin-top: 90px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 92vw);
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    padding: 18px 0;
+    transition: background .25s ease, padding .25s ease, border-color .25s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.header.is-scrolled {
+    background: rgba(11, 13, 18, .72);
+    border-bottom: 1px solid var(--line);
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: .12em;
+    font-size: 14px;
+}
+
+.nav {
+    display: flex;
+    gap: 18px;
+    color: var(--muted);
+}
+
+.nav a:hover {
+    color: var(--text);
+}
+
+/* Sections */
+section {
+    height: auto;
+    padding: 60px 0;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+    overflow: hidden;
+}
+
+.hero__bg {
+    position: absolute;
+    inset: -20%;
+    background:
+        radial-gradient(600px 380px at 30% 20%, rgba(255, 255, 255, .14), transparent 60%),
+        radial-gradient(520px 420px at 70% 40%, rgba(120, 160, 255, .18), transparent 62%),
+        radial-gradient(520px 520px at 50% 80%, rgba(170, 120, 255, .12), transparent 64%);
+    transform: translateZ(0);
+}
+
+.hero__inner {
+    position: relative;
+}
+
+.eyebrow {
+    color: var(--muted);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0 0 12px;
+}
+
+.hero__title {
+    font-size: clamp(38px, 6vw, 78px);
+    line-height: 1.02;
+    margin: 0 0 18px;
+    letter-spacing: -.02em;
+}
+
+.hero__desc {
+    max-width: 60ch;
+    color: var(--muted);
+    margin: 0 0 26px;
+}
+
+/* Hero cards */
+.hero__cards {
+    margin-top: 34px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.mini-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 14px;
+    background: rgba(255, 255, 255, .03);
+}
+
+.mini-card strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.mini-card span {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* Common section text */
+.section-head {
+    margin-bottom: 22px;
+}
+
+.section-title {
+    font-size: clamp(28px, 3.2vw, 44px);
+    margin: 0 0 10px;
+}
+
+.section-desc {
+    color: var(--muted);
+    margin: 0;
+}
+
+/* Work cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px;
+    background: rgba(255, 255, 255, .03);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    margin: 10px 0 12px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card a {
+    color: rgba(255, 255, 255, .86);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Career */
+.results__grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.bullets {
+    margin: 18px 0 0;
+    padding-left: 18px;
+    color: var(--muted);
+}
+
+.bullets li {
+    margin: 8px 0;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.stat {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px;
+    background: rgba(255, 255, 255, .03);
+}
+
+.stat strong {
+    display: block;
+    font-size: 34px;
+    letter-spacing: -.02em;
+}
+
+.stat span {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* Footer */
+.footer {
+    padding: 26px 0;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+    .hero__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .results__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        display: none;
+    }
+}
