@@ -76,3 +76,39 @@ function animateCount(el, target, durationMs) {
         }
     });
 }
+
+// Mobile Menu Toggle
+const menuBtn = document.getElementById("menuBtn");
+const menuClose = document.getElementById("menuClose");
+const mobileNav = document.getElementById("mobileNav");
+const navOverlay = document.getElementById("navOverlay");
+
+function openNav() {
+    document.body.classList.add("nav-open");
+    mobileNav.setAttribute("aria-hidden", "false");
+    menuBtn.setAttribute("aria-expanded", "true");
+}
+
+function closeNav() {
+    document.body.classList.remove("nav-open");
+    mobileNav.setAttribute("aria-hidden", "true");
+    menuBtn.setAttribute("aria-expanded", "false");
+}
+
+menuBtn?.addEventListener("click", () => {
+    const isOpen = document.body.classList.contains("nav-open");
+    isOpen ? closeNav() : openNav();
+});
+
+menuClose?.addEventListener("click", closeNav);
+navOverlay?.addEventListener("click", closeNav);
+
+// 메뉴 항목 클릭하면 자동 닫기
+document.querySelectorAll(".mobile-nav__link").forEach((link) => {
+    link.addEventListener("click", closeNav);
+});
+
+// ESC로 닫기
+window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeNav();
+});

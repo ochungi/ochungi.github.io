@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Jinny Publisher Portfolio</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/styles.css" />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
@@ -15,14 +16,35 @@
         <div class="container header__inner">
             <a class="logo" href="#top">PORTFOLIO</a>
 
+            <!-- PC 네비 -->
             <nav class="nav">
-                <!-- <a href="#intro">소개</a> -->
-                <a href="#">About</a>
+                <a href="#top">About</a>
                 <a href="#services">Work</a>
                 <a href="#results">Career</a>
             </nav>
+
+            <!-- Mobile Hamburger -->
+            <button class="hamburger" id="menuBtn" aria-label="메뉴 열기" aria-controls="mobileNav" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
         </div>
+
+        <!-- Overlay -->
+        <div class="nav-overlay" id="navOverlay"></div>
+
+        <!-- Mobile Side Menu -->
+        <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+            <div class="mobile-nav__top">
+                <strong class="mobile-nav__title">MENU</strong>
+                <button class="mobile-nav__close" id="menuClose" aria-label="메뉴 닫기">✕</button>
+            </div>
+
+            <a href="#top" class="mobile-nav__link">About</a>
+            <a href="#services" class="mobile-nav__link">Work</a>
+            <a href="#results" class="mobile-nav__link">Career</a>
+        </nav>
     </header>
+
 
     <main>
         <!-- HERO -->
@@ -39,7 +61,7 @@
                 </h1>
 
                 <p class="hero__desc" data-aos="fade-up" data-aos-delay="200">
-                    현실에 머물러있지않고 계속 노력하며,저의 가치관은 아래와 같습니다.
+                    끊임없이 성장하며, 일하는 태도와 가치관을 아래에 담았습니다.
                 </p>
 
                 <div class="hero__cards">
@@ -74,37 +96,73 @@
                 <div class="section-head">
                     <h2 class="section-title" data-aos="fade-up" data-aos-delay="0">Work</h2>
                     <p class="section-desc" data-aos="fade-up" data-aos-delay="120">
-                        카드 UI를 스태거(stagger)로 올라오게 만들면 “액티브한” 느낌이 확 납니다.
+                        다양한 고객사의 요구사항을 반영해 구축한 실서비스 프로젝트들입니다.
                     </p>
                 </div>
 
                 <!-- 카드들은 GSAP로 스태거 처리 (AOS 제거) -->
                 <div class="card-grid" id="serviceCards">
                     <article class="card">
-                        <h3>웹/앱 개발사 소개</h3>
-                        <img src="./img/pf1.jpg">
-                        <a href="https://bemakers.co.kr/" target="_blank">보러가기</a>
+                        <a href="https://bemakers.co.kr/" target="_blank" class="card-link">
+                            <h3>웹/앱 개발사 소개</h3>
+                            <div class="img-wrap">
+                                <img src="./img/pf1.jpg" alt="웹/앱 개발사 소개" />
+                                <div class="overlay">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </a>
                     </article>
+
                     <article class="card">
-                        <h3>컨설팅 업체 소개</h3>
-                        <img src="./img/pf2.jpg">
-                        <a href="https://connect.hatgui.com/" target="_blank">보러가기</a>
+                        <a href="https://connect.hatgui.com/" target="_blank" class="card-link">
+                            <h3>컨설팅 업체 소개</h3>
+                            <div class="img-wrap">
+                                <img src="./img/pf2.jpg" alt="컨설팅 업체 소개" />
+                                <div class="overlay">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </a>
                     </article>
+
                     <article class="card">
-                        <h3>하키협회</h3>
-                        <img src="./img/pf3.jpg">
-                        <a href="https://koreahockey.co.kr/" target="_blank">보러가기</a>
+                        <a href="https://koreahockey.co.kr/" target="_blank" class="card-link">
+                            <h3>하키협회</h3>
+                            <div class="img-wrap">
+                                <img src="./img/pf3.jpg" alt="하키협회" />
+                                <div class="overlay">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </a>
                     </article>
+
                     <article class="card">
-                        <h3>인쇄물 주문 플랫폼</h3>
-                        <img src="./img/pf4.jpg">
-                        <a href="https://broadmind.co.kr/" target="_blank">보러가기</a>
+                        <a href="https://broadmind.co.kr/" target="_blank" class="card-link">
+                            <h3>인쇄물 주문 플랫폼</h3>
+                            <div class="img-wrap">
+                                <img src="./img/pf4.jpg" alt="인쇄물 주문 플랫폼" />
+                                <div class="overlay">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </a>
                     </article>
+
                     <article class="card">
-                        <h3>반려동물 동반 장소 소개 플랫폼</h3>
-                        <img src="./img/pf5.jpg">
-                        <a href="https://peton.me/bbs/page.php?hid=home" target="_blank">보러가기</a>
+                        <a href="https://peton.me/bbs/page.php?hid=home" target="_blank" class="card-link">
+                            <h3>반려동물 동반장소 소개 플랫폼</h3>
+                            <div class="img-wrap">
+                                <img src="./img/pf5.jpg" alt="반려동물 플랫폼" />
+                                <div class="overlay">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </a>
                     </article>
+
+
                 </div>
             </div>
         </section>
@@ -140,13 +198,11 @@
                 </div>
             </div>
         </section>
-
-
     </main>
 
     <footer class="footer">
         <div class="container footer__inner">
-            <p data-aos="fade-up" data-aos-delay="0">© Active Landing Practice</p>
+            <p data-aos="fade-up" data-aos-delay="0">© Active Practice</p>
             <a href="#top" data-aos="fade-up" data-aos-delay="120">TOP</a>
         </div>
     </footer>
